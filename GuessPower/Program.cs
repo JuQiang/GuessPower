@@ -9,7 +9,7 @@ namespace GuessPower
 {
     class Program
     {        
-        static void Main(string[] args)
+        static void Main(string[] args) 
         {
             List<Point> points = new List<Point>();
             string[] alllines = File.ReadAllLines(@"c:\temp\日电量数据.csv", Encoding.UTF8);
