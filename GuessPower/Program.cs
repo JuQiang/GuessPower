@@ -14,7 +14,7 @@ namespace GuessPower
             List<Point> points = new List<Point>();
             string[] alllines = File.ReadAllLines(@"c:\temp\日电量数据.csv", Encoding.UTF8);
 
-            int start = 366;
+            int start = 366;//2017年开始算。如果设置为1，则从2016年开始算。
             for (int i = start; i < alllines.Length; i++)
             {
                 string[] tmp = alllines[i].Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
